@@ -14,6 +14,13 @@ public class LamdaLearn {
 		ai.add(10, 32);
 		StrLength sL = (str) -> str.length();
 		System.out.println(sL.getLength("puneet"));
+		StrLength sl = (str)->{
+			String str1 = str.trim();
+			System.out.println(str);
+			System.out.println(str1);
+			return str1.length();
+		};
+		System.out.println(sl.getLength("    Pun ee t  "));
 		SquareIt si = (a)->a*a;
 		System.out.println(si.square(20));
 		
